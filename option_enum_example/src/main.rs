@@ -4,9 +4,8 @@ fn main() {
     //numbers.push(2);
 
     let value = numbers.pop();
-    match value {
-        None => println!("Null value.."),
-        Some(val) => println!("value {}", val),
+    if let Some(val) = value {
+        println!("value {}", val)
     }
 
     let value = numbers.pop();
